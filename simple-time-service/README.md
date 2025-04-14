@@ -41,7 +41,7 @@ Before getting started, make sure the following tools are installed on your syst
 ### 🔹 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/simple-time-service.git
+git clone https://github.com/azure-devsecops-rajan/simple-time-service.git
 cd simple-time-service
 ```
 
@@ -63,8 +63,8 @@ You should see the JSON response with timestamp and IP.
 ## 🐳 DockerHub Image (Public)
 To pull and run directly without cloning:
 ```bash
-docker pull rajanyadav/simpletimeservice
-docker run -p 5000:5000 rajanyadav/simpletimeservice
+docker pull rajanyadav128/praticle41:simpletimeservice-v1
+docker run -d --name simpletimeservice-container -p 5000:5000 rajanyadav128/praticle41:simpletimeservice-v1
 ```
 ---
 ## 🔐 Security & Best Practices
