@@ -84,7 +84,9 @@ terraform output
 If you want to clean up and tear down the resources, use the following command:
 ```bash
 terraform destroy
-``` Confirm by typing ```yes```.
+```
+Confirm by typing ```yes```.
+
 ---
 ## Modules 🔨
 ## Network Module 🌐
@@ -98,6 +100,7 @@ This module creates an **Azure Application Gateway**, which acts as a **load bal
 
 ## Kubernetes Deployment Module 🛠️
 This module deploys your containerized application on the AKS cluster. It creates a **Kubernetes Deployment** and a **Kubernetes Service** of type **LoadBalancer** to expose the app to the internet.
+
 ---
 ## Outputs 📡
 - ```app_gateway_ip```: Public IP address of the Azure Application Gateway.
@@ -109,4 +112,5 @@ This module deploys your containerized application on the AKS cluster. It create
 ---
 ## Contributing 🤝
 Feel free to fork this repository and submit **pull requests** with improvements or new features! We welcome contributions to make this project even better 💻.
+
 ---
