@@ -57,19 +57,19 @@ cd <repository-directory>
 ```
 ---
 ### 3. Initialize Terraform 🧰
-Run the ```bashterraform init``` command to initialize the Terraform configuration and download the necessary providers:
+Run the ```terraform init``` command to initialize the Terraform configuration and download the necessary providers:
 ```bash
 terraform init
 ```
 ---
 ### 4. Plan the Deployment 🔍
-Use the ```bashterraform plan``` command to see what changes Terraform will make to your infrastructure:
+Use the ```terraform plan``` command to see what changes Terraform will make to your infrastructure:
 ```bash
 terraform plan
 ```
 ---
 ### 5. Apply the Terraform Plan 🛠️
-Run the ```bashterraform apply``` command to create the resources in Azure. Terraform will prompt for confirmation—type yes to proceed:
+Run the ```terraform apply``` command to create the resources in Azure. Terraform will prompt for confirmation—type yes to proceed:
 ```bash
 terraform apply
 ```
@@ -85,7 +85,7 @@ If you want to clean up and tear down the resources, use the following command:
 ```bash
 terraform destroy
 ```
-Confirm by typing ```bashyes```.
+Confirm by typing ```yes```.
 ---
 ## Modules 🔨
 ## Network Module 🌐
@@ -101,8 +101,8 @@ This module creates an Azure Application Gateway, which acts as a load balancer 
 This module deploys your containerized application on the AKS cluster. It creates a Kubernetes Deployment and a Kubernetes Service of type LoadBalancer to expose the app to the internet.
 ---
 ## Outputs 📡
-```bashapp_gateway_ip```: Public IP address of the Azure Application Gateway.
-```bashservice_ip: Public IP address of the Kubernetes service that exposes the deployed application.
+```app_gateway_ip```: Public IP address of the Azure Application Gateway.
+```service_ip: Public IP address of the Kubernetes service that exposes the deployed application.
 ---
 ## Notes 💡
 Make sure your container image is available in the Azure Container Registry (ACR) or any registry that your AKS cluster can access 🌍.
