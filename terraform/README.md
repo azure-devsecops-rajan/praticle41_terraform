@@ -1,11 +1,11 @@
 # 🚀 Azure Infrastructure Deployment with Terraform 🌐
 ## Overview 🌟
-This project provides a Terraform configuration to deploy a server-based architecture on Azure. The infrastructure includes:
+This project provides a Terraform configuration to deploy a **server-based architecture** on **Azure**. The infrastructure includes:
 
-A Virtual Network (VNet) with 2 public and 2 private subnets 🌍.
-An Azure Kubernetes Service (AKS) cluster to run your containerized application 🐳.
-An Azure Application Gateway as a load balancer to expose your services to the internet ⚖️.
-A Kubernetes deployment to deploy your containerized application on the AKS cluster 🎯.
+- A Virtual Network (VNet) with 2 **public** and 2 **private** subnets 🌍.
+- An **Azure Kubernetes Service (AKS)** cluster to run your containerized application 🐳.
+- An **Azure Application Gateway** as a **load balancer** to expose your services to the internet ⚖️.
+- A **Kubernetes deployment** to deploy your containerized application on the **AKS cluster** 🎯.
 ---
 ## Folder Structure 📂
 ```bash
@@ -20,18 +20,18 @@ terraform/
 ├── outputs.tf
 └── providers.tf
 ```
-```modules/```: Contains reusable modules for creating Azure resources like AKS, Network, Application Gateway, and Kubernetes deployment 🔄.
-```main.tf```: The main Terraform configuration that links all modules together 🔗.
-```variables.tf```: Defines the variables used in the Terraform configuration ⚙️.
-```outputs.tf```: Specifies the output values that will be shown after deployment 🌈.
-```providers.tf```: Contains the provider configuration for Azure ⚡.
+- ```modules/```: Contains reusable modules for creating Azure resources like AKS, Network, Application Gateway, and Kubernetes deployment 🔄.
+- ```main.tf```: The main Terraform configuration that links all modules together 🔗.
+- ```variables.tf```: Defines the variables used in the Terraform configuration ⚙️.
+- ```outputs.tf```: Specifies the output values that will be shown after deployment 🌈.
+- ```providers.tf```: Contains the provider configuration for **Azure** ⚡.
 ---
 ## Prerequisites 🛠️
 Before you begin, make sure you have:
 
-Terraform 0.12+ installed 🧑‍💻.
-An Azure account with sufficient privileges 🌐.
-Azure CLI installed and authenticated, or Service Principal credentials for automated login 🔑.
+- Terraform **0.12+** installed 🧑‍💻.
+- An **Azure account** with sufficient privileges 🌐.
+- **Azure CLI** installed and authenticated, or **Service Principal credentials** for automated login 🔑.
 ---
 ## Setup Instructions 🚀
 ### 1. Clone the Repository 📥
@@ -42,12 +42,12 @@ cd <repository-directory>
 ```
 ---
 ### 2. Configure Azure Credentials 🔐
-Make sure your Azure credentials are properly configured. You can authenticate using Azure CLI:
+Make sure your Azure credentials are properly configured. You can authenticate using **Azure CLI**:
 ```bash
 az login
 cd <repository-directory>
 ```
-Alternatively, configure Service Principal credentials by setting the following environment variables:
+Alternatively, configure **Service Principal credentials** by setting the following environment variables:
 ```bash
 export ARM_CLIENT_ID="<your-client-id>"
 export ARM_CLIENT_SECRET="<your-client-secret>"
@@ -89,25 +89,25 @@ Confirm by typing ```yes```.
 ---
 ## Modules 🔨
 ## Network Module 🌐
-This module creates an Azure Virtual Network (VNet) and 4 subnets: 2 public and 2 private. These subnets are used to deploy the resources securely.
+This module creates an **Azure Virtual Network (VNet)** and 4 subnets: 2 **public** and 2 **private**. These subnets are used to deploy the resources securely.
 
 ## AKS Module 🏞️
-This module creates an Azure Kubernetes Service (AKS) cluster to run your containerized applications. The AKS cluster is deployed within the private subnets.
+This module creates an **Azure Kubernetes Service (AKS)** cluster to run your containerized applications. The AKS cluster is deployed within the private subnets.
 
 ## Application Gateway Module 🔄
-This module creates an Azure Application Gateway, which acts as a load balancer in the public subnets to expose your AKS services to the internet.
+This module creates an **Azure Application Gateway**, which acts as a **load balancer** in the public subnets to expose your AKS services to the internet.
 
 ## Kubernetes Deployment Module 🛠️
-This module deploys your containerized application on the AKS cluster. It creates a Kubernetes Deployment and a Kubernetes Service of type LoadBalancer to expose the app to the internet.
+This module deploys your containerized application on the AKS cluster. It creates a **Kubernetes Deployment** and a **Kubernetes Service** of type **LoadBalancer** to expose the app to the internet.
 ---
 ## Outputs 📡
-```app_gateway_ip```: Public IP address of the Azure Application Gateway.
-```service_ip: Public IP address of the Kubernetes service that exposes the deployed application.
+- ```app_gateway_ip```: Public IP address of the Azure Application Gateway.
+- ```service_ip: Public IP address of the Kubernetes service that exposes the deployed application.
 ---
 ## Notes 💡
-Make sure your container image is available in the Azure Container Registry (ACR) or any registry that your AKS cluster can access 🌍.
-Adjust the node pool size, VM size, and other configurations based on your needs ⚙️.
+- Make sure your container image is available in the **Azure Container Registry (ACR)** or any registry that your AKS cluster can access 🌍.
+- Adjust the **node pool size, VM size,** and other configurations based on your needs ⚙️.
 ---
 ## Contributing 🤝
-Feel free to fork this repository and submit pull requests with improvements or new features! We welcome contributions to make this project even better 💻.
+Feel free to fork this repository and submit **pull requests** with improvements or new features! We welcome contributions to make this project even better 💻.
 ---
