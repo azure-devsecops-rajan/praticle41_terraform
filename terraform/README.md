@@ -2,7 +2,7 @@
 ## Overview 🌟
 This project provides a Terraform configuration to deploy a server-based architecture on Azure. The infrastructure includes:
 
-A Virtual Network (VNet) with 2 public and 2 private subnets 🌍.
+**A Virtual Network (VNet) with 2 public and 2 private subnets 🌍.**
 An Azure Kubernetes Service (AKS) cluster to run your containerized application 🐳.
 An Azure Application Gateway as a load balancer to expose your services to the internet ⚖️.
 A Kubernetes deployment to deploy your containerized application on the AKS cluster 🎯.
@@ -20,11 +20,11 @@ terraform/
 ├── outputs.tf
 └── providers.tf
 ```
-```bashmodules/```: Contains reusable modules for creating Azure resources like AKS, Network, Application Gateway, and Kubernetes deployment 🔄.
-```bashmain.tf```: The main Terraform configuration that links all modules together 🔗.
-```bashvariables.tf```: Defines the variables used in the Terraform configuration ⚙️.
-```bashoutputs.tf```: Specifies the output values that will be shown after deployment 🌈.
-```bashproviders.tf```: Contains the provider configuration for Azure ⚡.
+```bash modules/```: Contains reusable modules for creating Azure resources like AKS, Network, Application Gateway, and Kubernetes deployment 🔄.
+```bash main.tf```: The main Terraform configuration that links all modules together 🔗.
+```bash variables.tf```: Defines the variables used in the Terraform configuration ⚙️.
+```bash outputs.tf```: Specifies the output values that will be shown after deployment 🌈.
+```bash providers.tf```: Contains the provider configuration for Azure ⚡.
 ---
 ## Prerequisites 🛠️
 Before you begin, make sure you have:
