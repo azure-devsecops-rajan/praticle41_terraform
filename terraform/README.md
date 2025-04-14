@@ -84,8 +84,7 @@ terraform output
 If you want to clean up and tear down the resources, use the following command:
 ```bash
 terraform destroy
-```
-Confirm by typing ```yes```.
+``` Confirm by typing ```yes```.
 ---
 ## Modules 🔨
 ## Network Module 🌐
